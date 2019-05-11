@@ -1,0 +1,7 @@
+<launch>
+  <include file="$(find bot_gazebo)/launch/fetch_sim_table_static.launch" />
+  <include file="$(find bot_nav)/launch/fetch_nav.launch" >
+    <arg name="map_file" value="$(find bot_nav)/maps/building_map.yaml" />
+  </include>
+
+</launch>

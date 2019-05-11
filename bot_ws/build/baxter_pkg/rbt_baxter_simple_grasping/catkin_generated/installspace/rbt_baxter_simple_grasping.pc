@@ -1,0 +1,8 @@
+prefix=/home/mtb/sim_ws/bot_ws/install
+
+Name: rbt_baxter_simple_grasping
+Description: Description of rbt_baxter_simple_grasping
+Version: 0.2.2
+Cflags: -I/home/mtb/sim_ws/bot_ws/install/include
+Libs: -L/home/mtb/sim_ws/bot_ws/install/lib -lrbt_baxter_simple_grasping
+Requires: actionlib geometry_msgs grasping_msgs moveit_msgs pcl_ros sensor_msgs shape_msgs

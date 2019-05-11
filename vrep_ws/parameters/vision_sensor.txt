@@ -1,0 +1,10 @@
+position:
+  x: +1.1310e+00
+  y: +1.0036e-01
+  z: +1.0062e+00
+orientation:
+  alpha: +1.7695e+02
+  beta: -5.7947e+01
+  gamma: +1.7624e+02
+
+

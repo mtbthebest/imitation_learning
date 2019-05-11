@@ -1,0 +1,8 @@
+prefix=/home/mtb/sim_ws/bot_ws/install
+
+Name: rbt_baxter_kinematics
+Description: Description of rbt_baxter_kinematics
+Version: 1.2.12
+Cflags: -I/home/mtb/sim_ws/bot_ws/install/include
+Libs: -L/home/mtb/sim_ws/bot_ws/install/lib -lrbt_baxter_kinematics
+Requires: std_msgs rbt_baxter_msgs gazebo_msgs sensor_msgs kdl_parser

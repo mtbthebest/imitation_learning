@@ -1,0 +1,8 @@
+prefix=/home/mtb/sim_ws/bot_ws/install
+
+Name: bot_moveit
+Description: Description of bot_moveit
+Version: 0.3.0
+Cflags: 
+Libs: -L/home/mtb/sim_ws/bot_ws/install/lib 
+Requires: 

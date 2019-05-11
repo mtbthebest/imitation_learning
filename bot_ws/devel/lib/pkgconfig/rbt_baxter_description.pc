@@ -1,0 +1,8 @@
+prefix=/home/mtb/sim_ws/bot_ws/devel
+
+Name: rbt_baxter_description
+Description: Description of rbt_baxter_description
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/mtb/sim_ws/bot_ws/devel/lib 
+Requires: 

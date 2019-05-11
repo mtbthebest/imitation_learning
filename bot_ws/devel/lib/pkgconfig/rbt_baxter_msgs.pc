@@ -1,0 +1,8 @@
+prefix=/home/mtb/sim_ws/bot_ws/devel
+
+Name: rbt_baxter_msgs
+Description: Description of rbt_baxter_msgs
+Version: 1.2.0
+Cflags: -I/home/mtb/sim_ws/bot_ws/devel/include
+Libs: -L/home/mtb/sim_ws/bot_ws/devel/lib 
+Requires: message_runtime geometry_msgs sensor_msgs std_msgs

@@ -1,0 +1,4 @@
+<launch>
+    <!--<include file="$(find bot_gazebo)/launch/fetch_sim_table_nav.launch"/>-->
+    <include file="$(find bot_moveit)/launch/move_group.launch"/>
+</launch>

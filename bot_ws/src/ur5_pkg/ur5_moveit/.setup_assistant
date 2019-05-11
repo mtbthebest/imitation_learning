@@ -1,0 +1,10 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: ur5_description
+    relative_path: urdf/ur5.urdf
+  SRDF:
+    relative_path: config/ur5.srdf
+  CONFIG:
+    author_name: r
+    author_email: r@f.com
+    generated_timestamp: 1539411468

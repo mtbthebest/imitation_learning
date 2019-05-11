@@ -1,0 +1,8 @@
+prefix=/home/mtb/sim_ws/bot_ws/devel
+
+Name: rbt_baxter_moveit
+Description: Description of rbt_baxter_moveit
+Version: 0.3.0
+Cflags: 
+Libs: -L/home/mtb/sim_ws/bot_ws/devel/lib 
+Requires: 

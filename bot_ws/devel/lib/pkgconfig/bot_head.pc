@@ -1,0 +1,8 @@
+prefix=/home/mtb/sim_ws/bot_ws/devel
+
+Name: bot_head
+Description: Description of bot_head
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/mtb/sim_ws/bot_ws/devel/lib 
+Requires: 

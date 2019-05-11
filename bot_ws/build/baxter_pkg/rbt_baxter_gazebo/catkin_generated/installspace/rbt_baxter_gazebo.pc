@@ -1,0 +1,8 @@
+prefix=/home/mtb/sim_ws/bot_ws/install
+
+Name: rbt_baxter_gazebo
+Description: Description of rbt_baxter_gazebo
+Version: 1.2.12
+Cflags: 
+Libs: -L/home/mtb/sim_ws/bot_ws/install/lib 
+Requires: rbt_baxter_msgs gazebo_ros_control roscpp controller_manager_msgs

@@ -1,0 +1,8 @@
+prefix=/home/mtb/sim_ws/bot_ws/install
+
+Name: vrep_motion
+Description: Description of vrep_motion
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/mtb/sim_ws/bot_ws/install/lib 
+Requires: 

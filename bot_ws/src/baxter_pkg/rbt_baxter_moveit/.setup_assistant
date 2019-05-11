@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: baxter_description
+    relative_path: urdf/baxter.urdf.xacro
+    use_jade_xacro: true
+  SRDF:
+    relative_path: config/baxter.srdf
+  CONFIG:
+    author_name: mtb
+    author_email: mtbthebest11@gmail.com
+    generated_timestamp: 1529173964

@@ -1,0 +1,6 @@
+set(rbt_baxter_interface_SETUP_PY_VERSION "1.2.0")
+set(rbt_baxter_interface_SETUP_PY_SCRIPTS "")
+set(rbt_baxter_interface_SETUP_PY_PACKAGES "rbt_baxter_interface;rbt_baxter_control;rbt_baxter_dataflow;joint_trajectory_action;gripper_action;head_action")
+set(rbt_baxter_interface_SETUP_PY_PACKAGE_DIRS "src/rbt_baxter_interface;src/rbt_baxter_control;src/rbt_baxter_dataflow;src/joint_trajectory_action;src/gripper_action;src/head_action")
+set(rbt_baxter_interface_SETUP_PY_MODULES "")
+set(rbt_baxter_interface_SETUP_PY_MODULE_DIRS "")

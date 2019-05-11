@@ -1,0 +1,30 @@
+digraph G {
+"jaco_fingers_base_link" -> "jaco_7_finger_mount_thumb"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 20.203\nBuffer length: 4.95\nMost recent transform: 1539009543.37\nOldest transform: 1539009538.42\n"];
+"jaco_8_finger_pinkie" -> "jaco_9_finger_pinkie_tip"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 20.203\nBuffer length: 4.95\nMost recent transform: 1539009543.37\nOldest transform: 1539009538.42\n"];
+"jaco_6_hand_limb" -> "jaco_fingers_base_link"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 20.203\nBuffer length: 4.95\nMost recent transform: 1539009543.37\nOldest transform: 1539009538.42\n"];
+"robot_root" -> "jaco_0_baseA"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 20.203\nBuffer length: 4.95\nMost recent transform: 1539009543.37\nOldest transform: 1539009538.42\n"];
+"jaco_3_forearm_limb" -> "jaco_ring_4"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 20.203\nBuffer length: 4.95\nMost recent transform: 1539009543.37\nOldest transform: 1539009538.42\n"];
+"jaco_4_upperwrist_limb" -> "jaco_ring_5"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 20.203\nBuffer length: 4.95\nMost recent transform: 1539009543.37\nOldest transform: 1539009538.42\n"];
+"jaco_5_lowerwrist_limb" -> "jaco_ring_6"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 20.203\nBuffer length: 4.95\nMost recent transform: 1539009543.37\nOldest transform: 1539009538.42\n"];
+"jaco_0_baseB_limb" -> "jaco_1_shoulder_limb"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 12.784\nBuffer length: 4.85\nMost recent transform: 1539009542.8\nOldest transform: 1539009537.95\n"];
+"jaco_0_baseB_limb" -> "jaco_ring_1"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 20.203\nBuffer length: 4.95\nMost recent transform: 1539009543.37\nOldest transform: 1539009538.42\n"];
+"jaco_1_shoulder_limb" -> "jaco_ring_2"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 20.203\nBuffer length: 4.95\nMost recent transform: 1539009543.37\nOldest transform: 1539009538.42\n"];
+"jaco_2_upperarm_limb" -> "jaco_ring_3"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 20.203\nBuffer length: 4.95\nMost recent transform: 1539009543.37\nOldest transform: 1539009538.42\n"];
+"jaco_0_baseA" -> "jaco_0_baseB_limb"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 20.203\nBuffer length: 4.95\nMost recent transform: 1539009543.37\nOldest transform: 1539009538.42\n"];
+"jaco_1_shoulder_limb" -> "jaco_2_upperarm_limb"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 12.784\nBuffer length: 4.85\nMost recent transform: 1539009542.8\nOldest transform: 1539009537.95\n"];
+"jaco_fingers_base_link" -> "jaco_8_finger_pinkie"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 12.784\nBuffer length: 4.85\nMost recent transform: 1539009542.8\nOldest transform: 1539009537.95\n"];
+"jaco_fingers_base_link" -> "jaco_8_finger_index"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 12.784\nBuffer length: 4.85\nMost recent transform: 1539009542.8\nOldest transform: 1539009537.95\n"];
+"jaco_fingers_base_link" -> "jaco_7_finger_mount_pinkie"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 20.203\nBuffer length: 4.95\nMost recent transform: 1539009543.37\nOldest transform: 1539009538.42\n"];
+"jaco_3_forearm_limb" -> "jaco_4_upperwrist_limb"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 12.784\nBuffer length: 4.85\nMost recent transform: 1539009542.8\nOldest transform: 1539009537.95\n"];
+"jaco_2_upperarm_limb" -> "jaco_3_forearm_limb"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 12.784\nBuffer length: 4.85\nMost recent transform: 1539009542.8\nOldest transform: 1539009537.95\n"];
+"jaco_4_upperwrist_limb" -> "jaco_5_lowerwrist_limb"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 12.784\nBuffer length: 4.85\nMost recent transform: 1539009542.8\nOldest transform: 1539009537.95\n"];
+"jaco_fingers_base_link" -> "jaco_8_finger_thumb"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 12.784\nBuffer length: 4.85\nMost recent transform: 1539009542.8\nOldest transform: 1539009537.95\n"];
+"jaco_5_lowerwrist_limb" -> "jaco_6_hand_limb"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 12.784\nBuffer length: 4.85\nMost recent transform: 1539009542.8\nOldest transform: 1539009537.95\n"];
+"jaco_8_finger_thumb" -> "jaco_9_finger_thumb_tip"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 20.203\nBuffer length: 4.95\nMost recent transform: 1539009543.37\nOldest transform: 1539009538.42\n"];
+"jaco_8_finger_index" -> "jaco_9_finger_index_tip"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 20.203\nBuffer length: 4.95\nMost recent transform: 1539009543.37\nOldest transform: 1539009538.42\n"];
+"jaco_fingers_base_link" -> "jaco_7_finger_mount_index"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 20.203\nBuffer length: 4.95\nMost recent transform: 1539009543.37\nOldest transform: 1539009538.42\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1539009542.93"[ shape=plaintext ] ;
+}->"robot_root";
+}

@@ -1,0 +1,43 @@
+<library path="lib/librbt_baxter_controllers">
+
+  <class name="rbt_baxter_controllers/RbtBaxterPositionController"
+	 type="rbt_baxter_controllers::RbtBaxterPositionController"
+	 base_class_type="controller_interface::ControllerBase">
+    <description>
+      The RbtBaxterPositionController tracks position commands for the entire Baxter arm. It expects a EffortJointInterface type of hardware interface.
+    </description>
+  </class>
+
+  <class name="rbt_baxter_controllers/RbtBaxterVelocityController"
+	 type="rbt_baxter_controllers::RbtBaxterVelocityController"
+	 base_class_type="controller_interface::ControllerBase">
+    <description>
+      The RbtBaxterVelocityController tracks velocity commands for the entire Baxter arm. It expects a EffortJointInterface type of hardware interface.
+    </description>
+  </class>
+
+  <class name="rbt_baxter_controllers/RbtBaxterEffortController"
+	 type="rbt_baxter_controllers::RbtBaxterEffortController"
+	 base_class_type="controller_interface::ControllerBase">
+    <description>
+      The RbtBaxterEffortController tracks effort commands for the Baxter joints. It expects a EffortJointInterface type of hardware interface.
+    </description>
+  </class>
+  
+    <class name="rbt_baxter_controllers/RbtBaxterHeadController"
+	 type="rbt_baxter_controllers::RbtBaxterHeadController"
+	 base_class_type="controller_interface::ControllerBase">
+    <description>
+      The RbtBaxterHeadController tracks position commands for the Baxter head. It expects a EffortJointInterface type of hardware interface.
+    </description>
+  </class>
+
+  <class name="rbt_baxter_controllers/RbtBaxterGripperController"
+	 type="rbt_baxter_controllers::RbtBaxterGripperController"
+	 base_class_type="controller_interface::ControllerBase">
+    <description>
+      The RbtBaxterGripperController tracks gripper commands for the Baxter end effector. It expects a EffortJointInterface type of hardware interface.
+    </description>
+  </class>
+
+</library>

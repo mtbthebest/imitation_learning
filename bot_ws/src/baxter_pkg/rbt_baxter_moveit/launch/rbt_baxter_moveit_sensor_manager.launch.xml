@@ -1,0 +1,59 @@
+<!--<launch>-->
+     <!--<arg name="camera_link_pose" default="0.15 0.075 0.5 0.0 0.7854 0.0"/>-->
+     <!--<arg name="kinect" default="false"/>-->
+     <!--<group if="$(arg kinect)" >-->
+         <!--&lt;!&ndash; launch openni to talk to kinect &ndash;&gt;-->
+         <!--<include file="$(find freenect_launch)/launch/freenect.launch">-->
+             <!--&lt;!&ndash; These args are workarounds for tf_prefix issues in freenect.launch &ndash;&gt;-->
+             <!--<arg name="rgb_frame_id" value="camera_rgb_optical_frame"/>-->
+             <!--<arg name="depth_frame_id" value="camera_depth_optical_frame"/>-->
+         <!--</include>-->
+         <!--&lt;!&ndash; Users update this to set transform between camera and robot &ndash;&gt;-->
+         <!--<node pkg="tf" type="static_transform_publisher" name="camera_link_broadcaster"-->
+               <!--args="$(arg camera_link_pose) /torso /camera_link 100" />-->
+
+         <!--&lt;!&ndash; octomap parameters for moveit &ndash;&gt;-->
+         <!--<group ns="move_group" >-->
+             <!--<param name="octomap_frame" type="string" value="camera_link" />-->
+             <!--<param name="octomap_resolution" type="double" value="0.02" />-->
+             <!--<rosparam command="load" file="$(find rbt_baxter_moveit)/config/kinect_sensor.yaml" />-->
+         <!--</group>-->
+     <!--</group>-->
+     <!--<arg name="xtion" default="false"/>-->
+     <!--<group if="$(arg xtion)" >-->
+         <!--&lt;!&ndash; launch openni to talk to xtion &ndash;&gt;-->
+         <!--<include file="$(find openni_launch)/launch/openni.launch">-->
+             <!--&lt;!&ndash; These args are workarounds for tf_prefix issues in openni.launch &ndash;&gt;-->
+             <!--<arg name="rgb_frame_id" value="camera_rgb_optical_frame" />-->
+             <!--<arg name="depth_frame_id" value="camera_depth_optical_frame" />-->
+         <!--</include>-->
+         <!--&lt;!&ndash; Users update this to set transform between camera and robot &ndash;&gt;-->
+         <!--&lt;!&ndash; This example has the Xtion mounted to the chest of the robot &ndash;&gt;-->
+         <!--<node pkg="tf" type="static_transform_publisher" name="camera_link_broadcaster"-->
+               <!--args="$(arg camera_link_pose) /torso /camera_link 100" />-->
+
+         <!--&lt;!&ndash; octomap parameters for moveit &ndash;&gt;-->
+         <!--<group ns="move_group" >-->
+             <!--<param name="octomap_frame" type="string" value="camera_link" />-->
+             <!--<param name="octomap_resolution" type="double" value="0.02" />-->
+             <!--<rosparam command="load" file="$(find rbt_baxter_moveit)/config/xtion_sensor.yaml" />-->
+         <!--</group>-->
+     <!--</group>-->
+<!--</launch>-->
+
+<launch>
+
+  <!-- Set the file describing which sensor(s) to use to build the octomap  -->
+  <arg name="moveit_octomap_sensor_params_file" default="$(find rbt_baxter_moveit)/config/sensors.yaml" />
+
+  <!-- Params for the octomap monitor -->
+  <param name="octomap_frame" type="string" value="base_link" />
+  <param name="octomap_resolution" type="double" value="0.05" />
+  <!--<arg name="camera_link_pose" default="0.15 0.075 0.5 0.0 0.7854 0.0"/>-->
+  <!--<node pkg="tf" type="static_transform_publisher" name="camera_link_broadcaster"-->
+    <!--args="$(arg camera_link_pose) /torso /camera_link 100" />-->
+
+  <!-- sensors used to update the map -->
+  <rosparam command="load" file="$(arg moveit_octomap_sensor_params_file)" />
+
+</launch>

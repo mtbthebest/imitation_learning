@@ -1,0 +1,6 @@
+set(bot_utils_SETUP_PY_VERSION "0.0.0")
+set(bot_utils_SETUP_PY_SCRIPTS "")
+set(bot_utils_SETUP_PY_PACKAGES "bot_utils")
+set(bot_utils_SETUP_PY_PACKAGE_DIRS "src/bot_utils")
+set(bot_utils_SETUP_PY_MODULES "")
+set(bot_utils_SETUP_PY_MODULE_DIRS "")

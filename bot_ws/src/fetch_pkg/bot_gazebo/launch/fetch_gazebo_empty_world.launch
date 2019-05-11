@@ -1,0 +1,12 @@
+<launch>
+
+    <arg name="robot" default="fetch"/>
+
+
+    <!-- Start Gazebo with a blank world -->
+    <include file="$(find bot_gazebo)/launch/include/empty_world.launch"/>
+
+    <!-- Oh, you wanted a robot? -->
+    <include file="$(find bot_gazebo)/launch/include/$(arg robot).launch.xml"/>
+
+</launch>

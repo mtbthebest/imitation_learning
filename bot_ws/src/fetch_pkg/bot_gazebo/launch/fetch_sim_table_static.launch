@@ -1,0 +1,12 @@
+<launch>
+
+  <env name="GAZEBO_MODEL_PATH" value="$(find bot_gazebo)/models:$(optenv GAZEBO_MODEL_PATH)" />
+  <!--Include a new world-->
+    <arg name="robot" default="fetch"/>
+    <include file="$(find bot_gazebo)/launch/include/empty_world.launch">
+        <arg name="world_name" value="$(find bot_gazebo)/worlds/table_world.sdf"/>
+    </include>
+    <!--Include the robot-->
+    <include file="$(find bot_gazebo)/launch/include/$(arg robot).launch.xml" />
+
+</launch>

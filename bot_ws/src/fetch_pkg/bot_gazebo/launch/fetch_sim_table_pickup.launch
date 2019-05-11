@@ -1,0 +1,8 @@
+<launch>
+    <include file="$(find bot_gazebo)/launch/fetch_sim_table_moveit.launch"/>
+    <node name="basic_grasping_perception" pkg="simple_grasping" type="basic_grasping_perception" >
+        <rosparam command="load" file="$(find bot_gazebo)/config/simple_grasping.yaml" />
+    </node>
+        <!--<node name="vision_server" pkg="bot_gazebo" type="vision_server.py" />-->
+
+</launch>

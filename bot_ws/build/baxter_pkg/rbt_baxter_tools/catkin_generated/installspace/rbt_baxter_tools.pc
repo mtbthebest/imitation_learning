@@ -1,0 +1,8 @@
+prefix=/home/mtb/sim_ws/bot_ws/install
+
+Name: rbt_baxter_tools
+Description: Description of rbt_baxter_tools
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/mtb/sim_ws/bot_ws/install/lib 
+Requires: 

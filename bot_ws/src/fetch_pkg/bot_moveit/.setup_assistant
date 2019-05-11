@@ -1,0 +1,10 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: bot_description
+    relative_path: robots/fetch.urdf
+  SRDF:
+    relative_path: config/fetch.srdf
+  CONFIG:
+    author_name: mtbthebest
+    author_email: mtbthebest11@gmail.com
+    generated_timestamp: 1526658819

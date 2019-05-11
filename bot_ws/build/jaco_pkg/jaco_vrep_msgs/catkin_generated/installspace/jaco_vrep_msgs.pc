@@ -1,0 +1,8 @@
+prefix=/home/mtb/sim_ws/bot_ws/install
+
+Name: jaco_vrep_msgs
+Description: Description of jaco_vrep_msgs
+Version: 0.0.0
+Cflags: -I/home/mtb/sim_ws/bot_ws/install/include
+Libs: -L/home/mtb/sim_ws/bot_ws/install/lib 
+Requires: message_runtime

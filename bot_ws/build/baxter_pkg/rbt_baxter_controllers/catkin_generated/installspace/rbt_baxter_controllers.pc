@@ -1,0 +1,8 @@
+prefix=/home/mtb/sim_ws/bot_ws/install
+
+Name: rbt_baxter_controllers
+Description: Description of rbt_baxter_controllers
+Version: 1.2.12
+Cflags: -I/home/mtb/sim_ws/bot_ws/install/include
+Libs: -L/home/mtb/sim_ws/bot_ws/install/lib -lrbt_baxter_controllers
+Requires: controller_interface control_toolbox effort_controllers rbt_baxter_msgs
